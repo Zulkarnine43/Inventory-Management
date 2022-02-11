@@ -36,6 +36,7 @@ class ProductController extends Controller
     	$data['product_name']=$request->product_name;
     	$data['product_code']=$request->product_code;
     	$data['cat_id']=$request->cat_id;
+      $data['product_unit']=$request->product_unit;
     	$data['sup_id']=$request->sup_id;
     	$data['product_garage']=$request->product_garage;
     	$data['product_route']=$request->product_route;
@@ -131,6 +132,7 @@ class ProductController extends Controller
         $data['product_name']=$request->product_name;
         $data['product_code']=$request->product_code;
         $data['cat_id']=$request->cat_id;
+        $data['product_unit']=$request->product_unit;
         $data['sup_id']=$request->sup_id;
         $data['product_garage']=$request->product_garage;
         $data['product_route']=$request->product_route;

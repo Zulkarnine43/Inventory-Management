@@ -53,6 +53,10 @@
                                     	@endforeach
                                     </select>
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword18">Product Unit</label>
+                                    <input type="number" class="form-control" name="product_unit" placeholder="Product Unit" >
+                                </div>
                                  <div class="form-group">
                                     <label for="exampleInputPassword21">Supplier</label>
                                     @php
@@ -64,10 +68,12 @@
                                     	@endforeach
                                     </select>
                                 </div>
+
                                 <div class="form-group">
                                     <label for="exampleInputPassword18">Godaun</label>
                                     <input type="text" class="form-control" name="product_garage" placeholder="Godown Number" >
                                 </div>
+
                                 <div class="form-group">
                                     <label for="exampleInputPassword17">Product Route</label>
                                     <input type="text" class="form-control" name="product_route" placeholder="Product Route" >

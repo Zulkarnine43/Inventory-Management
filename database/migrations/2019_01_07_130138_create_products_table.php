@@ -17,6 +17,7 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('product_name')->nullable();
             $table->integer('cat_id');
+            $table->integer('product_unit');
             $table->integer('sup_id');
             $table->string('product_code')->nullable();
             $table->string('product_garage')->nullable();

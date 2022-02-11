@@ -52,6 +52,10 @@
                                     	@endforeach
                                     </select>
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword18">Product Unit</label>
+                                    <input type="number" class="form-control" name="product_unit" value="{{ $prod->product_unit }}" >
+                                </div>
                                  <div class="form-group">
                                     <label for="exampleInputPassword21">Supplier</label>
                                     @php

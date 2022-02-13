@@ -178,6 +178,14 @@
                                     <li><a href="{{ route('all.category') }}">All Category</a></li>
                                 </ul>
                             </li>
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="md md-palette"></i> <span> Purchase </span> <span class="pull-right"><i class="md md-add"></i></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ route('add.purchase') }}">Add Purchase</a></li>
+                                    <li><a href="{{ route('all.purchase') }}">All Purchase</a></li>
+                                </ul>
+                            </li>
                            
                            
                             <li class="has_sub">
@@ -268,16 +276,6 @@
           <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
           <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>
             
-
-
-         
-
-
-
-
-
-
-        
         <script type="text/javascript">
         $(document).ready(function() {
             $('#example').DataTable( {

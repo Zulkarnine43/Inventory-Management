@@ -106,6 +106,15 @@ Route::get('/pending/order','PosController@PendingOrder')->name('pending.orders'
 Route::get('/view-order-status/{id}','PosController@ViewOrder');
 Route::get('/view-order/{id}','PosController@ViewOrderdone');
 
+//Purchase Routes are here------------------
+Route::get('/add-purchase','PurchaseController@AddPurchase')->name('add.purchase');
+Route::post('/insert-purchase','PurchaseController@InsertPurchase');
+Route::get('/all-purchase', 'PurchaseController@AllPurchase')->name('all.purchase');
+Route::get('/delete-purchase/{id}', 'PurchaseController@DeletePurchase');
+// Route::get('/view-product/{id}', 'ProductController@ViewProduct');
+// Route::get('/edit-product/{id}', 'ProductController@EditProduct');
+// Route::post('/update-product/{id}','ProductController@UpdateProduct');
+
 Route::get('/pos-done/{id}','PosController@PosDONE');
 Route::get('/success/order','PosController@SuccessOrder')->name('success.orders');
 //Cart controller

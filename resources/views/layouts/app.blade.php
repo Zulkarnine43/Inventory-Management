@@ -42,16 +42,24 @@
   <body class="fixed-left">   
         <!-- Begin page -->
         <div id="wrapper">
-                        <!-- Authentication Links -->
-                        @guest
-                           
-                        @else
-                                <!-- Top Bar Start -->
+            <!-- Authentication Links -->
+            @guest
+                
+            @else
+            
+                    <!-- Top Bar Start -->
             <div class="topbar">
                 <!-- LOGO -->
+                
                 <div class="topbar-left">
+                    
                     <div class="text-center">
-                        <a href="" class="logo"><i class="md md-terrain"></i> <span>Rainbow </span></a>
+                        <div class="logo">
+                            <i class="md  md-menu" id="menu-res" style="color: black"></i>
+                            <a href=""><i class="md md-terrain"></i> <span style="color: black">Rainbow </span></a>
+                            
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- Button mobile view to collapse sidebar menu -->
@@ -63,7 +71,7 @@
                                 <div class="form-group">
                                     <input type="text" class="form-control search-bar" placeholder="Type here for search...">
                                 </div>
-                                <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                                <button type="submit" class="btn btn-search"><i class="md md-search"></i></button>
                             </form>
 
                             <ul class="nav navbar-nav navbar-right pull-right">
@@ -97,7 +105,7 @@
             <!-- ========== Left Sidebar Start ========== -->
 
             <div class="left side-menu">
-                <div class="sidebar-inner slimscrollleft">
+                <div class="sidebar-inner ">
                   
                     <div id="sidebar-menu">
                         <ul>
@@ -303,10 +311,15 @@
                     time: 1200
                 });
             });
+            jQuery(document).ready(function(){
+                jQuery("#menu-res").click(function(){
+                    jQuery(".side-menu").slideToggle();
+                });
+            });
+
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
          <script src="{{asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script>
-
 
         <script>
       @if(Session::has('messege'))
